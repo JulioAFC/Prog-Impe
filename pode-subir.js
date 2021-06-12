@@ -11,17 +11,17 @@ let resposta
 function podeSubir (altura , acompanhada){
 
     if (altura <1.2 | altura >2){
-        resposta = "Acesso negado";
+        resposta = "True. Acesso negado";
     }
     else if( altura >1.4){
-        resposta = "Acesso autorizado";
+        resposta = "True.Acesso autorizado";
     }
     else{
         if (acompanhada == true){
-            resposta = "Acesso autorizado somente com acompanhante";
+            resposta = "True. Acesso autorizado somente com acompanhante";
         }
         else{
-            resposta = "Acesso negado";
+            resposta = "False. Acesso negado";
         }
     }
     return console.log (resposta);
